@@ -5,7 +5,7 @@ pipeline {
         stage('Run') {
             steps {
                   bat 'docker build -t web .'
-                  bat 'docker run -d -p 8080:80 web'
+                  bat 'docker run -d -p 9090:80 web'
             }
 
         }
